@@ -507,4 +507,38 @@ page_header('Home');
 </section>
 
 
+
+<!-- ==========================
+     FINAL CALL TO ACTION
+=========================== -->
+
+<section class="final-cta-section">
+
+    <div class="final-cta-content">
+
+        <span class="section-tag">Get Started Today</span>
+
+        <h2>Take the Next Step in Managing Your Child's Vaccinations</h2>
+
+        <p>
+            Keep vaccination appointments and records organized
+            with E-VaxCare.
+        </p>
+
+        <div class="final-cta-buttons">
+
+            <a href="<?php echo e($start); ?>" class="btn btn-primary">
+                Go to Dashboard
+            </a>
+
+            <a href="<?php echo e(url('how.php')); ?>" class="btn btn-outline">
+                Learn How It Works
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
 <?php page_footer(); ?>

@@ -1822,3 +1822,600 @@ body {
     }
 
 }
+
+
+/* ==========================================
+   HOW IT WORKS PAGE
+========================================== */
+
+.how-hero {
+    padding: 100px 8%;
+    text-align: center;
+    background: linear-gradient(135deg, #EAF7F6, #F5F8FC);
+}
+
+.how-hero-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.how-hero h1 {
+    color: var(--text);
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.how-hero h1 span {
+    color: var(--primary);
+}
+
+.how-hero-content > p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: var(--text-muted);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.how-hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+
+/* PLATFORM OVERVIEW */
+
+.how-overview {
+    padding: 85px 8%;
+    background: white;
+}
+
+.how-roles-grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.how-role-card {
+    padding: 35px 28px;
+    text-align: center;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: var(--surface);
+    transition: 0.3s ease;
+}
+
+.how-role-card:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--shadow);
+}
+
+.how-role-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    background: var(--mint);
+    font-size: 34px;
+}
+
+.how-role-card h3 {
+    margin-bottom: 12px;
+    color: var(--text);
+    font-size: 21px;
+}
+
+.how-role-card p {
+    color: var(--text-muted);
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+
+/* PARENT PROCESS */
+
+.how-process-section {
+    padding: 90px 8%;
+    background: var(--background);
+}
+
+.how-steps {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.how-step {
+    position: relative;
+    padding: 30px 20px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    transition: 0.3s ease;
+}
+
+.how-step:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow);
+}
+
+.how-step-number {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.how-step-icon {
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    background: var(--mint);
+    border-radius: 15px;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.how-step h3 {
+    font-size: 17px;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.how-step p {
+    font-size: 13px;
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+
+/* HOSPITAL AND ADMIN WORKFLOW */
+
+.how-workflow-section {
+    padding: 90px 8%;
+    background: white;
+}
+
+.how-workflow-container {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.how-workflow-visual {
+    min-height: 310px;
+    padding: 45px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 25px;
+    background: var(--mint);
+}
+
+.workflow-icon {
+    width: 95px;
+    height: 95px;
+    display: grid;
+    place-items: center;
+    border-radius: 25px;
+    background: white;
+    font-size: 45px;
+    margin-bottom: 22px;
+}
+
+.how-workflow-visual > span {
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.how-workflow-visual h3 {
+    margin-top: 10px;
+    color: var(--text);
+    font-size: 23px;
+}
+
+.how-workflow-content h2 {
+    color: var(--text);
+    font-size: 32px;
+    line-height: 1.3;
+    margin: 15px 0;
+}
+
+.how-workflow-content > p {
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.how-workflow-content ul {
+    list-style: none;
+}
+
+.how-workflow-content li {
+    position: relative;
+    padding: 10px 0 10px 30px;
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.how-workflow-content li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.admin-workflow {
+    background: var(--background);
+}
+
+.admin-visual {
+    background: #EAF0FA;
+}
+
+
+/* FAQ SECTION */
+
+.how-faq-section {
+    padding: 90px 8%;
+    background: white;
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    padding: 20px 24px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--surface);
+    transition: 0.3s ease;
+}
+
+.faq-item[open] {
+    border-color: var(--primary);
+    box-shadow: var(--shadow);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-right: 30px;
+    color: var(--text);
+    font-weight: 700;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: -3px;
+    color: var(--primary);
+    font-size: 23px;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.8;
+    padding-top: 15px;
+}
+
+
+/* FINAL CALL TO ACTION */
+
+.how-cta-section {
+    padding: 80px 8%;
+    background: linear-gradient(135deg, #087F8C, #12A89D);
+    text-align: center;
+}
+
+.how-cta-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.how-cta-content > span {
+    color: #D9FFFA;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.how-cta-content h2 {
+    color: white;
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+.how-cta-content p {
+    color: #E8FFFC;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.how-cta-content .btn-primary {
+    display: inline-flex;
+    background: white;
+    color: var(--primary-dark);
+}
+
+.how-cta-content .btn-primary:hover {
+    background: var(--mint);
+}
+
+
+/* HOW PAGE RESPONSIVE DESIGN */
+
+@media (max-width: 1000px) {
+
+    .how-steps {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .how-workflow-container {
+        gap: 35px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .how-hero {
+        padding: 75px 6%;
+    }
+
+    .how-hero h1 {
+        font-size: 36px;
+    }
+
+    .how-roles-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .how-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .how-workflow-container {
+        grid-template-columns: 1fr;
+    }
+
+    .admin-workflow .how-workflow-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .how-workflow-content h2 {
+        font-size: 27px;
+    }
+
+    .how-cta-content h2 {
+        font-size: 29px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .how-steps {
+        grid-template-columns: 1fr;
+    }
+
+    .how-hero h1 {
+        font-size: 31px;
+    }
+
+    .how-hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+}
+
+/* ==========================
+   HOMEPAGE FAQ SECTION
+========================== */
+
+.faq-section {
+    padding: 80px 8%;
+    background: var(--surface);
+}
+
+.faq-section .section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-section .section-tag,
+.final-cta-section .section-tag {
+    display: inline-block;
+    color: var(--primary);
+    background: var(--mint);
+    padding: 7px 16px;
+    border-radius: 30px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.faq-section .section-heading h2 {
+    font-size: 32px;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.faq-section .section-heading p {
+    color: var(--text-muted);
+}
+
+.faq-container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.faq-section .faq-item {
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    transition: 0.3s ease;
+}
+
+.faq-section .faq-item[open] {
+    border-color: var(--primary);
+    box-shadow: var(--shadow);
+}
+
+.faq-section .faq-item summary {
+    color: var(--text);
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-right: 30px;
+}
+
+.faq-section .faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-section .faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: -4px;
+    color: var(--primary);
+    font-size: 24px;
+}
+
+.faq-section .faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-section .faq-item p {
+    color: var(--text-muted);
+    margin-top: 15px;
+    line-height: 1.8;
+}
+
+
+/* ==========================
+   FINAL CALL TO ACTION
+========================== */
+
+.final-cta-section {
+    padding: 85px 8%;
+    background: linear-gradient(
+        135deg,
+        var(--mint),
+        var(--background)
+    );
+}
+
+.final-cta-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.final-cta-content h2 {
+    color: var(--text);
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 18px;
+}
+
+.final-cta-content p {
+    color: var(--text-muted);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.final-cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.final-cta-buttons .btn {
+    text-decoration: none;
+}
+
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media (max-width: 768px) {
+
+    .faq-section,
+    .final-cta-section {
+        padding: 60px 6%;
+    }
+
+    .faq-section .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .final-cta-content h2 {
+        font-size: 29px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .faq-section .faq-item {
+        padding: 17px;
+    }
+
+    .final-cta-content h2 {
+        font-size: 25px;
+    }
+
+    .final-cta-buttons {
+        flex-direction: column;
+    }
+
+    .final-cta-buttons .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+}
